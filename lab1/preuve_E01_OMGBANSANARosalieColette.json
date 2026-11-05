@@ -2,18 +2,18 @@
   "version": 1,
   "chapitre": 1,
   "equipe": "E01",
-  "membre": "GHOMFO Odette Pamela",
-  "date_utc": "2026-11-01T09:55:10+00:00",
+  "membre": "OMGBA NSANA Rosalie Colette",
+  "date_utc": "2026-11-05T07:59:32+00:00",
   "parametres": {
     "timeout_s": 2,
     "delai_serveur_s": 3,
     "montant": 8000
   },
   "mesures": {
-    "latence_connexion_ms_moy": 52.1836,
-    "latence_connexion_ms_min": 0.0184,
-    "duree_scenario_a_s": 4.095,
-    "duree_scenario_b_s": 4.006
+    "latence_connexion_ms_moy": 0.4556,
+    "latence_connexion_ms_min": 0.0449,
+    "duree_scenario_a_s": 4.01,
+    "duree_scenario_b_s": 4.005
   },
   "resultats": {
     "executions_sans_idempotence": 2,
@@ -25,13 +25,13 @@
     "client_reessaie": true
   },
   "environnement": {
-    "python": "3.14.2",
+    "python": "3.14.4",
     "systeme": "Linux",
-    "hote": "f73247c472"
+    "hote": "b11394a772"
   },
   "git": {
-    "commits": "4",
-    "auteur": "pamelaghomfo"
+    "commits": "19",
+    "auteur": "Omgba"
   },
-  "empreinte": "194fa5abe2e5f653ced7dc3d30cf61b9c7a4b96db2f112fc16e09229b6967eda"
+  "empreinte": "755d3d65c0c5e3b5a1a13091cff6c34ee8ab01be09d30ff10209fb51e710a4d2"
 }

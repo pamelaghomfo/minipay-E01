@@ -10,16 +10,15 @@ traites = set()                      # identifiants déjà traités
 while True:
     conn, addr = s.accept()
     data = conn.recv(1024).decode()
-    id_paiement, message = data.split("|", 1)
-    if id_paiement in traites:
-        print("doublon ignoré :", id_paiement)
-    else:
-        traites.add(id_paiement)
+    #print("traites", traites)
+    #print(data.split("|")[0] in traites)
+    if data.split("|")[0] not in traites :
+        traites.add(data.split("|")[0])
+        #print(traites)
         compteur += 1
         print("paiements exécutés :", compteur)
-    time.sleep(3)
-    try:
-        conn.sendall(("OK " + message).encode())
-    except OSError:
-        pass
-    conn.close()
+        time.sleep(3)
+        conn.sendall(("OK "+data).encode())
+        conn.close()
+    else :
+        print(f"Paiement {data.split("|")[0]}, déjà traité.")
