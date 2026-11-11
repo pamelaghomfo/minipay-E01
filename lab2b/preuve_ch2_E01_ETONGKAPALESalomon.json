@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "chapitre": 2,
+  "equipe": "E01",
+  "membre": "ETONG KAPALE Salomon",
+  "date_utc": "2026-11-11T20:24:29+00:00",
+  "parametres": {
+    "timeout_s": 2,
+    "delai_serveur_s": 3,
+    "montant": 8000
+  },
+  "mesures": {
+    "latence_paiement_ms_moy": 18.629,
+    "redemarrage_paiement_s": 0.78
+  },
+  "resultats": {
+    "sante_initiale": true,
+    "paiement_ok": true,
+    "idempotence_ok": true,
+    "degrade_notification_ok": true,
+    "isolation_paiement_ok": true,
+    "reprise_ok": true
+  },
+  "environnement": {
+    "python": "3.14.4",
+    "systeme": "Linux",
+    "hote": "438efdc6f3"
+  },
+  "empreinte": "c784b69c0ac33e753f419fe59b1a1d35fb63d625343ecca617b582a9db9546a2"
+}
