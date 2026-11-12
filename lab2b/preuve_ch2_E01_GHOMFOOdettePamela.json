@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "chapitre": 2,
+  "equipe": "E01",
+  "membre": "GHOMFO Odette Pamela",
+  "date_utc": "2026-11-12T04:11:51+00:00",
+  "parametres": {
+    "timeout_s": 2,
+    "delai_serveur_s": 3,
+    "montant": 8000
+  },
+  "mesures": {
+    "latence_paiement_ms_moy": 12.903,
+    "redemarrage_paiement_s": 0.73
+  },
+  "resultats": {
+    "sante_initiale": true,
+    "paiement_ok": true,
+    "idempotence_ok": true,
+    "degrade_notification_ok": true,
+    "isolation_paiement_ok": true,
+    "reprise_ok": true
+  },
+  "environnement": {
+    "python": "3.14.2",
+    "systeme": "Linux",
+    "hote": "2dea8b34cd"
+  },
+  "empreinte": "7f88aa386d840e4bb27e4cc5ad14011e99e089f1079b6e7e6f8914c0bf0ee454"
+}
