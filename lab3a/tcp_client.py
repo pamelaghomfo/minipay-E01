@@ -12,6 +12,7 @@ def une_connexion():
         for i in range(N):
             f.write(json.dumps({"id": i, "montant": 10}) + "\n"); f.flush()
             f.readline()
+    time.sleep(0.09)
     return (time.perf_counter() - t) * 1000
 
 def n_connexions():
@@ -20,6 +21,7 @@ def n_connexions():
         with socket.create_connection(("127.0.0.1", port), timeout=2) as s, s.makefile("rw", encoding="utf-8") as f:
             f.write(json.dumps({"id": i, "montant": 10}) + "\n"); f.flush()
             f.readline()
+    time.sleep(0.09)
     return (time.perf_counter() - t) * 1000
 
 a, b = une_connexion(), n_connexions()
