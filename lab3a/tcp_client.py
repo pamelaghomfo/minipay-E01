@@ -7,21 +7,21 @@ port = int(sys.argv[1]) if len(sys.argv) > 1 else 6000
 N = int(sys.argv[2]) if len(sys.argv) > 2 else 200
 
 def une_connexion():
-    t = time.perf_counter()
+    t = time.perf_counter()    
+    time.sleep(0.09)
     with socket.create_connection(("127.0.0.1", port), timeout=2) as s, s.makefile("rw", encoding="utf-8") as f:
         for i in range(N):
             f.write(json.dumps({"id": i, "montant": 10}) + "\n"); f.flush()
             f.readline()
-    time.sleep(0.09)
     return (time.perf_counter() - t) * 1000
 
 def n_connexions():
     t = time.perf_counter()
-    for i in range(N):
+    for i in range(N):    
+        time.sleep(0.09)
         with socket.create_connection(("127.0.0.1", port), timeout=2) as s, s.makefile("rw", encoding="utf-8") as f:
             f.write(json.dumps({"id": i, "montant": 10}) + "\n"); f.flush()
             f.readline()
-    time.sleep(0.09)
     return (time.perf_counter() - t) * 1000
 
 a, b = une_connexion(), n_connexions()
