@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "chapitre": 3,
+  "equipe": "E01",
+  "membre": "GHOMFO Odette Pamela",
+  "date_utc": "2026-11-24T01:55:10+00:00",
+  "parametres": {
+    "timeout_s": 2,
+    "delai_serveur_s": 3,
+    "montant": 8000
+  },
+  "parametres_chapitre": {
+    "echecs_avant_succes": 1,
+    "seuil_disjoncteur": 2,
+    "messages": 2
+  },
+  "mesures": {
+    "duree_consommation_s": 6.98,
+    "latence_publication_ms_moy": 9.548
+  },
+  "resultats": {
+    "redistribution_ok": true,
+    "idempotence_consommateur_ok": true,
+    "doublon_sans_idempotence_ok": true,
+    "reessais_ok": true,
+    "reessais_abandon_ok": true,
+    "disjoncteur_ouvre_ok": true,
+    "disjoncteur_rapide_ok": true,
+    "disjoncteur_reprise_ok": true
+  },
+  "git": {
+    "commits": "43",
+    "auteur": "pamelaghomfo"
+  },
+  "environnement": {
+    "python": "3.10.4",
+    "systeme": "Windows",
+    "hote": "d5719c32f0"
+  },
+  "empreinte": "9377a80b4e386f22318c7ed6cc7cde69f392ffbf2f1fb627d2703afcd4a44402"
+}
